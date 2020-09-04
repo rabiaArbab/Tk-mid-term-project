@@ -1,0 +1,373 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin : 0;
+  padding : 0;
+  user-select: none;
+  box-sizing: border-box;
+
+}
+
+body{ 
+  display: flexbox;
+  padding: 0;
+  margin: 0;
+
+  background-size: cover;
+  }
+
+
+.logo {
+  margin-right: 28rem;
+
+}
+.queenblue {
+  background :  #436b95;
+  height: 10rem;
+}
+strong {
+  color: white;
+  font: 800;
+  font-size : 3rem;
+  position: relative;
+  top: 28px;
+  z-index: 4;
+  
+}
+.tagline {
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: x-large;
+  float: center;
+  margin-top: -30px;
+}
+
+#gradient-text ,strong{
+  background: -webkit-linear-gradient( rgb(143, 86, 86), black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+.cart {
+      float: right;
+      margin-top: -55px;
+      padding-right: 2em ;
+  }
+
+ /* Sidebar */
+.sidebar {
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  position: fixed;
+  z-index: 1;
+  width: 200px;
+  height: 400px;
+  /* top :0; */
+  left: 0;
+  background:  #39a78e;
+  /* padding-left: 1em; */
+}
+ .sidebar .text{
+   
+     color: white;
+     font-size: 16px;
+     font-weight: 400;
+     line-height : 40px;
+     text-align: center;
+     background: #1e1e1e;
+     letter-spacing: 1px;
+ }
+ nav ul {
+     line-height : 45px;
+     background : #39a78e;
+     /* background : #39a78e; */
+     height: 70%;
+     width: 100%;
+     list-style: none;
+
+ }
+ nav ul li {
+     line-height: 60px;
+     border-bottom : 1px solid rgba(255,255,255, .1);
+     /* list-style: none; */
+ }
+ nav ul li a{
+     position: relative;
+     color: white;
+     text-decoration: none;
+     font-size : 15px;
+     padding-left : 40px;
+     font-weight: 500;
+     display: block;
+     width : 100%;
+     border-left : 4px solid transparent;
+
+ }
+ nav ul li a:hover {
+  text-decoration: none;
+     color : #39a78e;
+     background : #1e1e1e;
+     border-left-color: #39a78e;
+
+ }
+nav ul ul {
+    position: static;
+    display: none;
+}
+nav ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+nav ul ul li a {
+    font-size : 12px;
+}
+
+nav ul li a span {
+ position: absolute;
+ top: 50%;
+ right : 20px;
+ font-size : 100px;
+ transform: translateY(-50%);
+ font-size : 22px;
+}
+nav ul li a:hover span{
+    transform : translateY(-50%) rotate(-180deg);
+}
+nav ul .featShow.show {
+   display: block;
+}
+
+
+/* footer */
+.footer-main-div{
+  width: 100%;
+  height : auto; 
+  margin-top: 400px;
+  background : #111;
+  padding : 20px 0;
+
+}
+.footer-social-icons {
+  width: 100%;
+  height: auto;
+  margin : auto;
+
+} 
+.footer-social-icons ul{
+  
+  margin : 0px;
+  padding : 0px;
+  text-align: center;
+}
+.footer-social-icons ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin : 0px 10px;
+  border-radius: 100%;
+  background: #39a78e;
+  
+}
+.footer-social-icons ul li a{
+  color : #111;
+  font-size: 25px;
+
+}
+.footer-social-icons ul li a i{
+  line-height: 50px;
+}
+
+.footer-menu-one {
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
+  height: auto;
+  margin : auto;
+  text-align : center;
+  margin-top : 20px;
+
+} 
+.flex-1 {
+  display: flex;
+  justify-content: center;
+}
+.footer-menu-one ul{
+  margin: 0;
+  padding : 0;
+  text-align: center;
+} 
+.footer-menu-one ul li {
+  display: inline;
+ 
+  margin : 0px 20px;
+
+}
+.footer-menu-one ul li a{
+ font-size : 13px;
+ font-weight: 500;
+ color: #fff;
+ text-transform: uppercase;
+ text-decoration: none;
+}
+
+
+
+
+  .price{
+    
+    color: #e69b06;
+    padding: 5px 0;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+      top:10px;
+  }
+   
+    .product figure{
+      width: 200px;
+      height: 300px;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px dotted rgb(0, 64, 75);
+    padding-bottom: 20px;
+    color: rgb(226, 236, 226);
+    margin: 10px;
+    font-weight: 100;
+    }
+    .product img{ 
+      position: relative;
+      top: 10%;
+      height:70% ;
+      width: 70%;}
+    #shop{
+      display: flex;
+      
+      justify-content: center;
+      color: black;
+     
+      background-repeat: no-repeat;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 15%;
+      width: fit-content;
+    }
+  #shop figcaption{
+    position: relative;
+    top: 8%;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: oblique;
+    font-family: monospace; }
+    
+    #shop p{
+    margin:0;
+    
+    }
+
+    /* new code for Children book category */
+    .bookChildren{
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -0.5em;
+
+    }
+
+    .bookChildren img{
+
+      margin-bottom: 6px;
+      height: 180px;
+      width: 80%;
+
+    }
+
+    /* Code for children book category is done  */
+    /* for increasing and decreasing shopping amount */
+    div.buy {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      height: 20px;
+      z-index: 1;
+      border: none;
+      text-align: center;
+      border-radius: 0px;
+    }
+    
+    .buy  input{ color: white;
+    font-family: fantasy;
+    border: none;
+  }
+  
+    .buy button {
+      display: flex;
+      width: 60px;
+      top: 10%;
+      text-align: center;
+      justify-content: center;
+      border: none;
+      background-color: zomp;
+      font-size: 1em;
+      height: 23px;
+      padding: 0px;
+      border-color: black;
+      background-color: rgb(3, 250, 188);
+      outline: none;
+      position: relative;
+      top:15px;
+      
+    }
+    
+    .buy button:hover {
+      cursor: pointer;
+      color: rgb(9, 250, 250);
+      background-color: black;
+      
+    }
+    
+    #decre {
+      margin-right: 0px;
+      margin-top: -3%;
+      
+      border: none;
+      
+    }
+    
+    #incre {
+      margin-left: 0px;
+      margin-top: 10%;
+      border: none;
+      
+    }
+    
+   
+  
+  span{
+    color: #12122c;
+  
+    font-size: medium;
+    font-family: fantasy;
+  }
+
+
+/* Media Queries */
+    @media only screen and (max-width: 700px) {
+        .tagline {
+            font-size: medium;
+        }
+        strong {
+            font-size : 1.5rem;
+        }
+        .cart {
+            margin-top: -50px;
+            height : 10px;
+        }
+      }
